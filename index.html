@@ -1,13 +1,366 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>git Intro</title>
- </head>
- <body>
-    <h1>well come in git & github</h1>
-    <p>this is the new text</p>
- </body>
- <script src="app.js"></script>
- </html>
+    <title>Spotify - Web ply: Music for everyone</title>
+    <link rel="icon" href="./base/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./mega-project/logo.pngkj">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        
+        <div class="nav-option" id="side-bar-btn">
+            <input type="checkbox" id="side-bar-btn-in" class="hedden">        
+            <label for="side-bar-btn-in">
+                <i class="fa-solid fa-bars fa-3x "></i>
+            </label>
+        </div>
+            
+        <div class="side-bar">
+            <div class="nav">                                  
+                <div class="nav-option home" style="opacity: 1;" > 
+                    <div>                
+                        <i class="fa-solid fa-house" style="opacity: 1;"></i>
+                        <a style="opacity: 1;" href="file:///C:/Users/Kishore/Downloads/sigma%200.7/DEVLOPMENT/LECTURS/css/master_css/bootstrap/in_lectur/index.html" target="_blank">Home</a>
+                    </div>
+                    <div class="nav-option">
+                        <label for="side-bar-btn-in"><i class="fa-solid fa-xmark fa-2x "></i></label>
+                    </div>    
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+                
+            </div>
+            <div class="library">
+                <div class="lb-header">
+                    <div class="lb-opt">
+                        <img class="img" src="./base/library_icon.png" alt="lb-icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="plus-arow">
+                        <i class="fa-solid fa-plus plus" class="plus"></i>
+                        <i class="fa-solid fa-arrow-right arrow" class="arrow"></i>
+                    </div>
+                </div>
+                <div class="playlist box">
+                    <p class="box-title">Creat Your first Playlist<p>
+                    <p class="box-text">It's easy. we'll help you.</p>
+                    <button class="button"><p class="btn-text">Creat Playlist</p></button>
+                </div>  
+                <div class="podcast box">
+                    <p class="box-title">Les't find some podcasts to follow<p>
+                    <p class="box-text">We'll keep you updeted on new episodes</p>
+                    <button class="button"><p class="btn-text">Browser podcast</p></button>
+                </div>  
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sticy-nav">
+                <div class="left-part">
+                    <div class="nav-i"><img class="ximg" src="./base/backward_icon.png" alt="undu"></div>
+                    <div class="nav-i"><img class="ximg" src="./base/forward_icon.png" alt="redu"></div>
+                </div>
+                <div class="right-part">
+                    <button class="button nav-btn dispiar"><p class="btn-text">Upgrade</p></button>
+                    <button class="button dark-button nav-btn">
+                        <p class="btn-text" id="d-btn-text">
+                            <i class="fa-regular fa-circle-down fa-1x nav-user"></i>Istall App
+                        </p>
+                    </button>
+                    <div class="nav-i"><i class="fa-regular fa-user"></i></div>
+                </div>
+            </div>
+            <div class="card-area">
+                <h2>
+                    Resently Played
+                </h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card1img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Top 50-Globle</h4>
+                            <p class="card-text">Your daily updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-cd-cnt">
+                    <h2>
+                        Spotify orignal & exclusive podecasts
+                    </h2>
+                    <p>Show all</p>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card4img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Naa Ready (From L...</h4>
+                            <p class="card-text">Aniruth Ravichnder , Thalapati Vijay , Asal..</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card2img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mahiye Jinna Sohna</h4>
+                            <p class="card-text">Darshan Raval</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card3img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mere Pass Tum Ho</h4>
+                            <p class="card-text">Silent Ocean</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-cd-cnt">
+                    <h2>
+                        Shows to try
+                    </h2>
+                    <p>Show all</p>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card2img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mahiye Jinna Sohna</h4>
+                            <p class="card-text">Darshan Raval</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card3img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mere Pass Tum Ho</h4>
+                            <p class="card-text">Silent Ocean</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card1img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Top 50-Globle</h4>
+                            <p class="card-text">Your daily updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card4img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Naa Ready (From L...</h4>
+                            <p class="card-text">Aniruth Ravichnder , Thalapati Vijay , Asal..</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card5img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Top globle songs</h4>
+                            <p class="card-text">Your weekly updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-cd-cnt">
+                    <h2>
+                        Recomanded for you
+                    </h2>
+                    <p>Show all</p>
+                </div>                    
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card1img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Top 50-Globle</h4>
+                            <p class="card-text">Your daily updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card3img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mere Pass Tum Ho</h4>
+                            <p class="card-text">Silent Ocean</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card5img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Top globle songs</h4>
+                            <p class="card-text">Your weekly updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card2img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mahiye Jinna Sohna</h4>
+                            <p class="card-text">Darshan Raval</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card4img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Naa Ready (From L...</h4>
+                            <p class="card-text">Aniruth Ravichnder , Thalapati Vijay , Asal..</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card6img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">India's top songs</h4>
+                            <p class="card-text">Your weekly updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-cd-cnt">
+                    <h2>
+                        Tranding now near you
+                    </h2>
+                    <p>Show all</p>
+                </div> 
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card3img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mere Pass Tum Ho</h4>
+                            <p class="card-text">Silent Ocean</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card4img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Naa Ready (From L...</h4>
+                            <p class="card-text">Aniruth Ravichnder , Thalapati Vijay , Asal..</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card1img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Top 50-Globle</h4>
+                            <p class="card-text">Your daily updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-cd-cnt">
+                    <h2>
+                         Fitured charts
+                    </h2>
+                    <p>Show all</p>
+                </div> 
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card6img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">India's top songs</h4>
+                            <p class="card-text">Your weekly updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card5img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Top globle songs</h4>
+                            <p class="card-text">Your weekly updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./base/card1img.jpeg" alt="img-1">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Top 50-Globle</h4>
+                            <p class="card-text">Your daily updetes of the most played tracks right...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer"></div>
+            </div>
+        </div>
+        <div class="video-player">
+            <div class="ply-left-part">
+                <div class="ply-card">
+                    <img src="./base/daylight.jpg" alt="song">
+                    <div class="card-body lr-m">
+                        <div class="box-title">Daylight</div>
+                         <div class="box-text">David Khusnor</div>
+                    </div>
+                </div>
+                <div class="heart lr-m nav-option"><i class="fa-regular fa-heart "></i></div>
+                <div class="window lr-m nav-option"><i class="fa-regular fa-window-maximize"></i></div>
+            </div>
+            <div class="ply-middel-part">
+                    <div class="tb-m upper-mply-part flex-a">
+                        <img class="lr-xm" src="./base/player_icon1.png" alt="">
+                        <img class="lr-xm" src="./base/player_icon2.png" alt="">
+                        <img class="ximg lr-xm" src="./base/player_icon3.png" alt="">
+                        <img class="lr-xm" src="./base/player_icon4.png" alt="">
+                        <img class="lr-xm" src="./base/player_icon5.png" alt="">
+                    </div>
+                    <div class="main-ply-part flex-a tb-m">
+                        <span class="lr-xm">00:00</span>
+                        <input class="lr-xm" type="range" name="" id="timeline" min="0" max="400" size="1">
+                        <span class="lr-xm">33:33</span>
+                    </div>
+            </div>
+            <div class="ply-right-part">
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <!-- <i class="fa-solid fa-speaker"></i> -->
+                <i class="fa-solid fa-desktop nav-option lr-m"></i>
+                <i class="fa-solid fa-tv nav-option lr-m"></i>                
+                <i class="fa-solid fa-list nav-option lr-m"></i>
+                <div class="sound">
+                    <label for=".volume-range lr-xm" class="volume-high"><i class="fa-solid fa-volume-high"></i></label>
+                    <label for=".volume-range lr-m" class="volume-low"><i class="fa-solid fa-volume-low "></i></label>
+                    <label for=".volume-range lr-m" class="volume-off"><i class="fa-solid fa-volume-off "></i></label>
+                    <label for=".volume-range lr-m" class="volume-muted"><i class="fa-solid fa-volume-xmark "></i></label>
+                    <input id="volume-range" class="lr-xm" type="range" min="0" max="100" step="20" value="100">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
