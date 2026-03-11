@@ -2,6 +2,12 @@
   display: flex;
   align-items: center;
 }
+.opy-fl{
+  opacity: 1;
+}
+.opy-hlf{
+  opacity : .5;
+}
 img{
   height: 1rem;
   width: 1rem;
@@ -321,6 +327,9 @@ a{
   width: 3.5rem;
   height: 4rem;
 }
+.like{
+  color : #f00;
+}
 .ply-middel-part{
   width: 50%;
   display: flex;
@@ -330,11 +339,15 @@ a{
 }
 #timeline{
   width: 25rem;
-  appearance: none;
+  /* appearance: none; */
   height: .2rem;
 }
+span{
+  height: 2 rem;
+  width: 3rem;
+}
 #volume-range{
-  appearance: none;
+  /* appearance: none; */
   height: .2rem;
 }
 .ply-right-part{
@@ -343,7 +356,7 @@ a{
   align-items: center;
   justify-content: flex-end;
 }
-.volume-low,.volume-muted,.volume-off{
+.volume-low,.volume-muted,.volume-off,.disNone{
   padding: 0 1rem;
   display: none;
 }
