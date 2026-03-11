@@ -11,6 +11,9 @@ let like = document.querySelector(".fa-heart")
 let repeat = document.querySelector(".repeat")
 let priveas = document.querySelector(".priveas")
 let forward = document.querySelector(".forward")
+let vdoPlayer = document.querySelector(".video-player")
+let windowIco = document.querySelector(".windowIco")
+vdoPlayer.classList.add("disNone")
 let songDt;
 let music;
 let prMusic;
@@ -38,8 +41,8 @@ cards.forEach((card)=>{
         music = card.querySelector("audio")
         console.log(music)
         playbarInfo()
-        like.classList.remove("like")
         playTmLn()
+        like.classList.remove("like")
     });
 });
 repeat.addEventListener("click",()=>{
@@ -105,6 +108,10 @@ priveas.addEventListener("click" , ()=>{
         like.classList.remove("like")
     }
 });
+windowIco.addEventListener("click",()=>{
+    windowIco.classList.toggle("opy-fl")
+    windowIco.classList.toggle("opy-hlf")
+})
 
 
 // function: 
@@ -135,6 +142,7 @@ function musicRep(){
     timeline.value = 0;
 }
 function playbarInfo(){
+    vdoPlayer.classList.remove("disNone")
     for(song of songArr){
         if(song.src == music.getAttribute("src")){
             songDt = song

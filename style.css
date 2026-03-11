@@ -356,7 +356,7 @@ span{
   align-items: center;
   justify-content: flex-end;
 }
-.volume-low,.volume-muted,.volume-off{
+.volume-low,.volume-muted,.volume-off,.disNone{
   padding: 0 1rem;
   display: none;
 }
