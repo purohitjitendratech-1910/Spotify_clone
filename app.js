@@ -31,18 +31,13 @@ let count = 0;
 for(card of cards){
     let audio = card.querySelector("audio")
     audio.setAttribute(`id`,`${++count}`)
-    console.log(audio)
 }
-console.log(music)
 // Eventlistners: 
 cards.forEach((card)=>{
     card.addEventListener("click" , (event)=>{
-        console.log(card)
         music = card.querySelector("audio")
-        console.log(music)
         playbarInfo()
         playTmLn()
-        like.classList.remove("like")
     });
 });
 repeat.addEventListener("click",()=>{
@@ -57,7 +52,6 @@ marge.addEventListener("click",()=>{
 })
 vlmRng.addEventListener("input", (event)=>{
     let volume = vlmRng.value
-    console.log(volume)
     music.volume = volume/100
     vlmIco.classList.remove("fa-volume","fa-volume-low","fa-volume-xmark","fa-volume-high")
     if(volume==0){
@@ -88,7 +82,6 @@ forward.addEventListener("click",()=>{
             playbarInfo()
             playTmLn()
         }
-        like.classList.remove("like")
     }
 })
 priveas.addEventListener("click" , ()=>{
@@ -105,7 +98,6 @@ priveas.addEventListener("click" , ()=>{
             playbarInfo()
             playTmLn()
         }
-        like.classList.remove("like")
     }
 });
 windowIco.addEventListener("click",()=>{
@@ -129,7 +121,6 @@ function changeIco(){
 }
 function changeIcoByCard(){
     if(prMusic){
-        console.log(prMusic)
         prMusic.pause()
     }
     if(music){
@@ -146,12 +137,15 @@ function playbarInfo(){
     for(song of songArr){
         if(song.src == music.getAttribute("src")){
             songDt = song
+            music.volume = (vlmRng.value)/100
             music.currentTime = 0
             plyCard.children[0].src = `${songDt.cover}`
             plyCard.children[1].children[0].innerHTML = `${songDt.songname}`
             plyCard.children[1].children[1].innerHTML = `${songDt.singer}`
             changeIcoByCard()
+            reset()
             prMusic = music
+            break
         }
         
     }
@@ -183,4 +177,9 @@ function playTmLn(){
         },2000)
     }
 });
+}
+function reset (){
+    like.classList.remove("like")
+    windowIco.classList.replace("opy-fl","opy-hlf")
+    marge.classList.replace("opy-fl","opy-hlf")
 }
